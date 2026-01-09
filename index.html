@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minh họa nghiên cứu | Khủng hoảng định hướng nghề nghiệp (Case Nam)</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --secondary: #1e40af;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #22c55e;
+      --danger: #ef4444;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 1rem;
+      font-size: 2.4rem;
+    }
+
+    header p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.15rem;
+      opacity: 0.95;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+      z-index: 20;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+      margin: 0;
+      padding: 0.8rem 1rem;
+      overflow-x: auto;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--primary);
+      white-space: nowrap;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    h2 {
+      color: var(--secondary);
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+    }
+
+    h3 {
+      margin-top: 0;
+      color: #111827;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 1.8rem;
+      margin-bottom: 1.8rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #dbeafe;
+      color: var(--secondary);
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      margin-right: 0.4rem;
+    }
+
+    .timeline {
+      border-left: 4px solid var(--primary);
+      padding-left: 1.5rem;
+    }
+
+    .timeline-item {
+      margin-bottom: 1.8rem;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: "";
+      width: 14px;
+      height: 14px;
+      background: var(--primary);
+      border-radius: 50%;
+      position: absolute;
+      left: -1.85rem;
+      top: 0.3rem;
+    }
+
+    .diagram {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .box {
+      background: #eff6ff;
+      border: 2px dashed var(--primary);
+      border-radius: 12px;
+      padding: 1rem 1.2rem;
+      min-width: 200px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .arrow {
+      font-size: 2rem;
+      align-self: center;
+      color: var(--muted);
+    }
+
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .highlight {
+      background: #fef3c7;
+      padding: 1rem;
+      border-left: 5px solid #f59e0b;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Khủng hoảng định hướng học tập & nghề nghiệp</h1>
+  <p>Website minh họa học thuật cho nghiên cứu tâm lý học đường – Phân tích chuyên sâu trường hợp học sinh lớp 11 (Case Nam).</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#overview">Tổng quan</a></li>
+    <li><a href="#timeline">Dòng thời gian</a></li>
+    <li><a href="#conflict">Xung đột tâm lý</a></li>
+    <li><a href="#frameworks">Framework</a></li>
+    <li><a href="#cycle">Vòng lặp tâm lý</a></li>
+    <li><a href="#intervention">Can thiệp</a></li>
+    <li><a href="#conclusion">Kết luận</a></li>
+  </ul>
+</nav>
+
+<section id="overview">
+  <h2>1. Tổng quan trường hợp</h2>
+  <div class="card">
+    <p><strong>Nam</strong> là học sinh lớp 11 tại một trường THPT ở thành phố lớn, có năng lực học thuật nổi trội ở các môn khoa học tự nhiên. Xuất thân từ gia đình có cha mẹ thành đạt, Nam sớm được định hướng theo các nghề nghiệp ổn định như y khoa hoặc kinh doanh.</p>
+    <p>Tuy nhiên, song song với con đường học thuật, Nam phát triển niềm yêu thích mạnh mẽ với <strong>truyền thông, sáng tạo nội dung và xây dựng cộng đồng số</strong>. Sự song hành của hai thế giới này tạo ra mâu thuẫn nội tại ngày càng lớn.</p>
+  </div>
+</section>
+
+<section id="timeline">
+  <h2>2. Dòng thời gian phát triển vấn đề</h2>
+  <div class="card timeline">
+    <div class="timeline-item">
+      <h3>Giai đoạn đầu</h3>
+      <p>Được định hướng học tập nghiêm túc, đạt thành tích cao, hình thành bản sắc "học sinh giỏi".</p>
+    </div>
+    <div class="timeline-item">
+      <h3>Giai đoạn khám phá</h3>
+      <p>Tham gia CLB, viết kịch bản, edit video, nhận phản hồi tích cực → cảm giác năng lực mới.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>Giai đoạn khủng hoảng</h3>
+      <p>Đứng trước lựa chọn đại học, xung đột giữa đam mê cá nhân và kỳ vọng gia đình bùng phát.</p>
+    </div>
+  </div>
+</section>
+
+<section id="conflict">
+  <h2>3. Xung đột tâm lý trung tâm</h2>
+  <div class="card">
+    <div class="diagram">
+      <div class="box">Kỳ vọng gia đình<br/>(An toàn – Ổn định)</div>
+      <div class="arrow">⇄</div>
+      <div class="box">Đam mê cá nhân<br/>(Tự do – Sáng tạo)</div>
+    </div>
+    <p style="margin-top:1.5rem">Nam bị kẹt giữa hai hệ giá trị: một bên là <strong>an toàn và thành công đã được kiểm chứng</strong>, một bên là <strong>bản sắc cá nhân đang hình thành</strong>.</p>
+  </div>
+</section>
+
+<section id="frameworks">
+  <h2>4. Framework phân tích tâm lý</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Self-Determination Theory</h3>
+      <p>Autonomy bị đe doạ ngầm, Competence bị chia tách, Relatedness thiếu an toàn.</p>
+      <span class="tag">Động lực</span>
+    </div>
+    <div class="card">
+      <h3>Identity vs Role Confusion</h3>
+      <p>Khủng hoảng bản sắc điển hình của tuổi vị thành niên.</p>
+      <span class="tag">Bản sắc</span>
+    </div>
+    <div class="card">
+      <h3>Avoidant Coping</h3>
+      <p>Né tránh cảm xúc bằng game và mạng xã hội.</p>
+      <span class="tag">Đối phó</span>
+    </div>
+    <div class="card">
+      <h3>Cognitive Distortions</h3>
+      <p>Suy nghĩ phân đôi, thảm hoá tương lai, sợ sai lầm.</p>
+      <span class="tag">Nhận thức</span>
+    </div>
+  </div>
+</section>
+
+<section id="cycle">
+  <h2>5. Vòng lặp tâm lý tiêu cực</h2>
+  <div class="card">
+    <div class="diagram">
+      <div class="box">Áp lực lựa chọn</div>
+      <div class="arrow">→</div>
+      <div class="box">Lo âu & bối rối</div>
+      <div class="arrow">→</div>
+      <div class="box">Né tránh (game, mạng xã hội)</div>
+      <div class="arrow">→</div>
+      <div class="box">Tội lỗi & mất định hướng</div>
+    </div>
+  </div>
+</section>
+
+<section id="intervention">
+  <h2>6. Định hướng can thiệp đề xuất</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Can thiệp với học sinh</h3>
+      <ul>
+        <li>Chia nhỏ quyết định nghề nghiệp</li>
+        <li>Thử nghiệm an toàn, có giới hạn</li>
+        <li>Tăng năng lực tự nhận thức</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Can thiệp với gia đình</h3>
+      <ul>
+        <li>Lắng nghe không định hướng</li>
+        <li>Công nhận giá trị bản sắc mới</li>
+        <li>Tạo gắn bó cảm xúc an toàn</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Can thiệp hệ thống</h3>
+      <ul>
+        <li>Hướng nghiệp cá nhân hoá</li>
+        <li>Học phần trải nghiệm nghề</li>
+        <li>Hỗ trợ song song nhiều lộ trình</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="highlight" style="margin-top:2rem">
+    <strong>Nguyên tắc cốt lõi:</strong> Không ép chọn ngay – mà tạo điều kiện để thử và điều chỉnh.
+  </div>
+</section>
+
+<section id="conclusion">
+  <h2>7. Kết luận học thuật</h2>
+  <div class="card">
+    <p>Trường hợp của Nam cho thấy khủng hoảng định hướng nghề nghiệp ở học sinh giỏi không bắt nguồn từ thiếu năng lực, mà từ <strong>xung đột giá trị và thiếu an toàn tâm lý</strong>.</p>
+    <p>Can thiệp hiệu quả cần tiếp cận đa tầng: cá nhân – gia đình – nhà trường, với trọng tâm là bảo vệ quyền khám phá bản sắc của người học.</p>
+  </div>
+</section>
+
+<footer>
+  <p>Website minh họa phục vụ nghiên cứu, đào tạo và tư vấn tâm lý học đường.</p>
+</footer>
+
+</body>
+</html>
